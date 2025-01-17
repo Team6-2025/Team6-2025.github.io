@@ -7,7 +7,7 @@
     top: 25%;
     left: 340px;
     text-align: center;
-    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 2s ease-in-out, opacity 1s ease-in-out;
     perspective: 1000px;
     display: flex;
     justify-content: center;
@@ -23,8 +23,15 @@
     right: 30%;
     top: 800px;
     opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
 }
 .Aristotele.Visible{
     opacity: 1;
+}
+
+/*.section{
+    width: 400px;
+    height: 800px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px 2px white;
 }

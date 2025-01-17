@@ -4,6 +4,16 @@ function clearScreen(){
     }
 }
 
+const grafica = {
+
+    home(){
+        const section = document.createElement("div");
+        section.classList.add("home");
+        
+        field.appendChild(section);
+    },
+};
+
 
 const quoteContainer = document.createElement("p");
 const quote = document.createElement("p");
@@ -37,6 +47,8 @@ quoteContainer.addEventListener("click", ()=>{
     quoteContainer.style.opacity = "0";
     quote.style.transform = "scale(20) translate(1200px, 1200px)";
     quote.style.opacity = "0";
-    setTimeout(()=>{clearScreen()}, 800);
+    setTimeout(()=>{clearScreen()
+        setTimeout(()=>{grafica.home()}, 800);
+    }, 800);
 
 });
