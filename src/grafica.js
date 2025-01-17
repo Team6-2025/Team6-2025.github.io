@@ -33,7 +33,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
 quoteContainer.addEventListener("click", ()=>{
-    quoteContainer.style.transform = "scale(50) translateZ(1000px)";
+    quoteContainer.style.transform = "scale(50) translateZ(1200px)";
+    quoteContainer.style.opacity = "0";
+    quote.style.transform = "scale(20) translate(1200px, 1200px)";
+    quote.style.opacity = "0";
     setTimeout(()=>{clearScreen()}, 800);
 
 });
