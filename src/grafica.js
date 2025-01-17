@@ -14,10 +14,21 @@ const grafica = {
         name.classList.add("Title");
         name.innerHTML = "PLACEHOLDER";
 
+        const div = document.createElement("div");
+        div.classList.add("prova");
+        div.style.backgroundColor = "rebeccapurple";
+        div.style.width = 160 * 3 + "px";
+        div.style.height = 90 * 3 + "px";
 
         section.appendChild(name);
+        section.appendChild(div);
         field.appendChild(section);
+
+        div.addEventListener("click", ()=>{
+            div.style.transform = "scale(8)";
+        });
     },
+
 };
 
 
@@ -45,7 +56,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     typeWriter();
 
-    setTimeout(()=>quote.classList.add("Visible"), speed*text.length * 3/2);
+    setTimeout(()=>quote.classList.add("Visible"), speed*text.length * 7/5);
     });
 
 quoteContainer.addEventListener("click", ()=>{
