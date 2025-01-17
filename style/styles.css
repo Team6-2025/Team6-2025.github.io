@@ -1,0 +1,30 @@
+.Platone{
+    color: white;
+    font-size: 10vh;
+    width: 1200px;
+    height: 30%;
+    position:absolute;
+    top: 25%;
+    left: 340px;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Aristotele{
+    color : white;
+    font-size: 5vh;
+    position: absolute;
+    width: 10%;
+    text-align: right;
+    right: 30%;
+    top: 800px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+.Aristotele.Visible{
+    opacity: 1;
+}
