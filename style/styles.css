@@ -37,7 +37,7 @@
         0 0 10px #fff,  
         0 0 20px #fff;
     border-radius: 10px;
-    transition: box-shadow 0.12s ease-in-out;
+    transition: box-shadow 0.12s ease-in-out, transform 2s ease-in-out;
     position: absolute;
     top: 140px;
     left: 560px;

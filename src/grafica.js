@@ -25,7 +25,7 @@ const grafica = {
         field.appendChild(section);
 
         div.addEventListener("click", ()=>{
-            div.style.transform = "scale(8)";
+            section.style.transform = "scale(8)";
         });
     },
 
