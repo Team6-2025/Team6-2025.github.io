@@ -9,7 +9,13 @@ const grafica = {
     home(){
         const section = document.createElement("div");
         section.classList.add("home");
-        
+
+        const name = document.createElement("h1");
+        name.classList.add("Title");
+        name.innerHTML = "PLACEHOLDER";
+
+
+        section.appendChild(name);
         field.appendChild(section);
     },
 };

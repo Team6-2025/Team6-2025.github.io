@@ -41,6 +41,8 @@
     position: absolute;
     top: 140px;
     left: 560px;
+    display: flex;
+    justify-content: center;
 }
 
 .home:hover{
@@ -49,4 +51,10 @@
         0 0 20px #fff,  
         0 0 50px #fff,  
         0 0 70px #fff;
+}
+
+.Title{
+    color: white;
+    position: relative;
+    top: 50px;
 }
