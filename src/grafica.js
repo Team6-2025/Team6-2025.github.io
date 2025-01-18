@@ -21,17 +21,13 @@ const grafica = {
         const section = document.createElement("div");
         section.classList.add("home");
 
-        const div = document.createElement("div");
-        div.classList.add("prova");
-        div.style.backgroundColor = "rebeccapurple";
-        div.style.width = 160 * 3 + "px";
-        div.style.height = 90 * 3 + "px";
-
-        section.appendChild(div);
         field.appendChild(section);
 
-        div.addEventListener("click", ()=>{
+        section.addEventListener("click", ()=>{
             section.style.transform = "scale(8)";
+            setTimeout(()=>{const a = document.createElement("a");
+            a.href = "https://drive.google.com/file/d/1YLEvUnXZBX-BtBBOgs27qMENaZxU0-l8/view?usp=sharing";
+            a.click();}, 1000);
         });
     },
 
