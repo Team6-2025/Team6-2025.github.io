@@ -1,6 +1,7 @@
 function clearScreen(){
     while (field.childNodes.length > 1) {
-        field.removeChild(field.firstChild);
+        console.log(field.childNodes.length);
+        field.removeChild(field.lastChild);
     }
 }
 
