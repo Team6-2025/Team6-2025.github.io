@@ -15,6 +15,7 @@ const grafica = {
         field.appendChild(sfondoBg);
 
         sfondoBg.style.zIndex = "0";
+        sfondoBg.style.width = "100%";
         
         const section = document.createElement("div");
         section.classList.add("home");
@@ -44,6 +45,7 @@ sfondoBg.src = "video/sfondo.mp4";
 sfondoBg.autoplay = true;
 sfondoBg.loop = true;
 sfondoBg.controls = false;
+sfondoBg.style.width = "100%";
 
 field.appendChild(sfondoBg);
 
