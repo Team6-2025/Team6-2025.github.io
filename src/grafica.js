@@ -1,5 +1,5 @@
 function clearScreen(){
-    while (field.firstChild) {
+    while (field.childNodes.length > 1) {
         field.removeChild(field.firstChild);
     }
 }
@@ -42,7 +42,6 @@ const quote = document.createElement("p");
 const audio = document.createElement("audio");
 const sfondoBg = document.createElement("video");
 sfondoBg.src = "video/sfondo.mp4";
-sfondoBg.autoplay = true;
 sfondoBg.loop = true;
 sfondoBg.controls = false;
 sfondoBg.style.width = "100%";
@@ -76,6 +75,7 @@ document.addEventListener("keypress", (event)=>{
     if (event.key === "s"){
         audio.play();
         typeWriter();
+        sfondoBg.play();
         setTimeout(()=>quote.classList.add("Visible"), 5650 * 7/6);
     }
 });
